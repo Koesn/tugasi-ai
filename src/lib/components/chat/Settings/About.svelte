@@ -55,12 +55,12 @@
 				<div class="flex flex-col text-xs text-gray-700 dark:text-gray-200">
 					<div class="flex gap-1">
 						<Tooltip content={WEBUI_BUILD_HASH}>
-							v{WEBUI_VERSION}
+							Open WebUI v{WEBUI_VERSION}
 						</Tooltip>
 						<a
 							href="https://github.com/open-webui/open-webui/releases/tag/v{version.latest}"
 							target="_blank"
-						>Open WebUI 
+						>
 							{updateAvailable === null
 								? $i18n.t('Checking for updates...')
 								: updateAvailable

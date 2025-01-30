@@ -54,14 +54,11 @@
 			<div class="flex w-full justify-between items-center">
 				<div class="flex flex-col text-xs text-gray-700 dark:text-gray-200">
 					<div class="flex gap-1">
-						<Tooltip content={WEBUI_BUILD_HASH}>
-							v{WEBUI_VERSION}
-						</Tooltip>
 
 						<a
 							href="https://github.com/open-webui/open-webui/releases/tag/v{version.latest}"
 							target="_blank"
-						>
+						>Open WebUI 
 							{updateAvailable === null
 								? $i18n.t('Checking for updates...')
 								: updateAvailable
@@ -113,10 +110,10 @@
 
 
 		<div class="mt-2 text-xs text-gray-400 dark:text-gray-500">
-		    Powered by 
-		    <a href="https://github.com/open-webui/open-webui" target="_blank">Open WebUI</a> created by 
-		    <a href="https://github.com/tjbck" target="_blank">T.J. Baek</a>, licensed under 
-		    <a href="https://github.com/open-webui/open-webui#BSD-3-Clause-1-ov-file" target="_blank">BSD-3-Clause</a>.
+			Powered by 
+			<a href="https://github.com/open-webui/open-webui" target="_blank">Open WebUI</a> created by 
+			<a href="https://github.com/tjbck" target="_blank">T.J. Baek</a>, licensed under 
+			<a href="https://github.com/open-webui/open-webui#BSD-3-Clause-1-ov-file" target="_blank">BSD-3-Clause</a>.
 		</div>
 
 

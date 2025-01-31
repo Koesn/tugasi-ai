@@ -620,7 +620,7 @@ if CUSTOM_NAME:
         if r.ok:
             if "logo" in data:
                 WEBUI_FAVICON_URL = url = (
-                    f"https://api.openwebui.com{data['logo']}"
+                    f"https://tugasiai.com{data['logo']}"
                     if data["logo"][0] == "/"
                     else data["logo"]
                 )
@@ -633,7 +633,7 @@ if CUSTOM_NAME:
 
             if "splash" in data:
                 url = (
-                    f"https://api.openwebui.com{data['splash']}"
+                    f"https://tugasiai.com{data['splash']}"
                     if data["splash"][0] == "/"
                     else data["splash"]
                 )

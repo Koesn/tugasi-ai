@@ -142,7 +142,7 @@ def get_rf(
             try:
                 rf = sentence_transformers.CrossEncoder(
                     get_model_path(reranking_model, auto_update),
-                    device=DEVICE_TYPE,
+                    device='cuda',
                     trust_remote_code=RAG_RERANKING_MODEL_TRUST_REMOTE_CODE,
                 )
             except:

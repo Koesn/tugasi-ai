@@ -1271,15 +1271,9 @@ async def oauth_callback(provider: str, request: Request, response: Response):
 @app.get("/manifest.json")
 async def get_manifest_json():
     return {
-<<<<<<< HEAD
-        "name": WEBUI_NAME,
-        "short_name": WEBUI_NAME,
-        "description": "Tugasi AI, a personal automation solution.",
-=======
         "name": app.state.WEBUI_NAME,
         "short_name": app.state.WEBUI_NAME,
-        "description": "Open WebUI is an open, extensible, user-friendly interface for AI that adapts to your workflow.",
->>>>>>> upstream/main
+        "description": "Tugasi AI - AI workflow web UI",
         "start_url": "/",
         "display": "standalone",
         "background_color": "#343541",

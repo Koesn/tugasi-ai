@@ -113,6 +113,7 @@ if WEBUI_NAME != "Tugasi AI":
 
 WEBUI_FAVICON_URL = "https://tugasiai.com/favicon.png"
 
+TRUSTED_SIGNATURE_KEY = os.environ.get("TRUSTED_SIGNATURE_KEY", "")
 
 ####################################
 # ENV (dev,test,prod)
